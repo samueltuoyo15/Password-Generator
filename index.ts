@@ -22,6 +22,7 @@ function handleGenerate(){
   if(!characterSet || Length === 0){
   alert('Please Select at least one character type'); 
   return;
+  copyBtn.style.display = "none";
   }
   
   let password = "";
@@ -32,6 +33,13 @@ function handleGenerate(){
   }
   
   generatedPassword.textContent = password.toString();
+  copyBtn.style.display = "inline-flex";
 }
 
 generateBtn.addEventListener("click", handleGenerate);
+
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(generatedPassword.textContent).then(() => alert ("Password Copied")).catch((error: any) => console.error(error));
+});
+
+document.querySelector("footer").style.color = "white";
