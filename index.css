@@ -40,7 +40,11 @@ section h2{
 }
 
 .password-container{
-   overflow: hidden;
+   overflow-x: auto;
+   overflow-y: hidden;
+   min-width: 100%;
+   white-space: nowrap;
+   position: relative;
    padding: 10px 15px;
    border-radius: 5px;
    background-color: #eee;
@@ -56,10 +60,14 @@ section h2{
    color:#334;
 }
 
-.password-container #btn{
-   color: #666;
+.password-container .btn{
+   color: #333;
+   background: #eee;
    font-size: 20px;
    cursor: pointer;
+   position: sticky;
+   z-index: 1;
+   right: 5px;
 }
 
  .password-container #copy-btn:hover{
