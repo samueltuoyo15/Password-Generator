@@ -17,7 +17,7 @@ function handleGenerate(){
   
   if(Numbers) characterSet += "0123456789";
   
-  if(symbols) characterSet += "*@#$_&-+()/?!;:':%©®™✓[]}\=§∆π√•~|£€¥√¥^°~";
+  if(Symbols) characterSet += "*@#$_&-+()/?!;:':%©®™✓[]}\=§∆π√•~|£€¥√¥^°~";
   
   if(!characterSet){
   alert('Please Select at least one character type'); 
