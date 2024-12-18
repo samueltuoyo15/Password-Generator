@@ -12,19 +12,19 @@
     <h3>Password Generator Pro</h3>
    
    <div class="password-container">
-     <span>Select Options</span>
+     <span id="generated-password">Select Options</span>
      <div class="btn far fa-copy"></div>
    </div>
    
    <div class="options">
      <div class="list">
-       <label for="lower">Lower Case</label>
-       <input type="checkbox" id="lower" checked/>
+       <label for="lowercase">Lower Case</label>
+       <input type="checkbox" id="lowercase" checked/>
      </div>
      
       <div class="list">
-       <label for="upper">UpperCase Letters</label>
-       <input type="checkbox" id="upper" checked/>
+       <label for="uppercase">UpperCase Letters</label>
+       <input type="checkbox" id="uppercase" checked/>
      </div>
      
       <div class="list">
@@ -38,12 +38,13 @@
      </div> 
      
        <div class="list">
-       <label for="lower">Length</label>
-       <input type="number" id="lower" min="10" value="10" max="600"/>
+       <label for="length">Length</label>
+       <input type="number" id="length" min="10" value="10" max="600"/>
      </div>
    </div>
    
    <button id="generate-btn">Generate password </button>
   </section>
+  <script src="index.js"></script>
 </body>
 </html>
