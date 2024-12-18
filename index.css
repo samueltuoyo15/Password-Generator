@@ -1,0 +1,120 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 20px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('asset/bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section{
+  background-color: #fff;
+   width: 330px;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.3);
+   margin-bottom: 40px;
+}
+
+section h2{
+  text-align: center;
+   font-size: 25px;
+   color: #334; 
+   padding-bottom: 5px;
+}
+
+.password-container{
+   overflow: hidden;
+   padding: 10px 15px;
+   border-radius: 5px;
+   background-color: #eee;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 10px 0;
+   border: 1px solid rgba(0,0,0,.3);
+}
+
+ .password-container span{
+   font-size: 20px;
+   color:#334;
+}
+
+.password-container #btn{
+   color: #666;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+ .password-container #copy-btn:hover{
+   color: #334;
+}
+
+
+.options .list{
+   padding: 10px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.options .list label{
+   font-size: 16px;
+   color: #666;
+   user-select: none;
+}
+
+.options .list input[type="checkbox"]{
+   appearance: none;
+   cursor: pointer;
+   border: 2px solid #334;
+   height: 15px;
+   width: 15px;
+   border-radius: 5px;
+   transition: .1s linear;
+}
+
+.options .list input[type="checkbox"]:checked{
+   border-radius: 50%;
+   background-color: #334;
+}
+
+.options .list input[type="number"]{
+   border: 2px solid #334;
+   width: 55px;
+   border-radius: 5px;
+   padding: 5px;
+   font-size: 18px;
+}
+
+#generate-btn{
+   margin-top: 10px;
+   border-radius: 5px;
+   background-color: crimson;
+   color: #fff;
+   font-size: 20px;
+   width: 100%;
+   padding: 10px;
+   cursor: pointer;
+   border: none;
+}
+
+#generate-btn:hover{
+   opacity: .9;
+}

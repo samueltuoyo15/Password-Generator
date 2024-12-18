@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Pro Password Generator | Samuel Tuoyo</title>
+</head>
+<body>
+  <section>
+    <h3>Password Generator Pro</h3>
+   
+   <div class="password-container">
+     <span>Select Options</span>
+     <div class="btn far fa-copy"></div>
+   </div>
+   
+   <div class="options">
+     <div class="list">
+       <label for="lower">Lower Case</label>
+       <input type="checkbox" id="lower" checked/>
+     </div>
+     
+      <div class="list">
+       <label for="upper">UpperCase Letters</label>
+       <input type="checkbox" id="upper" checked/>
+     </div>
+     
+      <div class="list">
+       <label for="number">Number</label>
+       <input type="checkbox" id="number" checked/>
+     </div>
+     
+      <div class="list">
+       <label for="symbol">Symbol</label>
+       <input type="checkbox" id="symbol" checked/>
+     </div> 
+     
+       <div class="list">
+       <label for="lower">Length</label>
+       <input type="number" id="lower" min="10" value="10" max="600"/>
+     </div>
+   </div>
+   
+   <button id="generate-btn">Generate password </button>
+  </section>
+</body>
+</html>
